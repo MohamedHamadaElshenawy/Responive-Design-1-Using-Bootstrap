@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive Web Design Using Bootstrap</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/fontawesome.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/media.css"/>
+        <link rel="stylesheet" href="css/site-themes/default-theme.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/hover-min.css" />
+        <link rel="stylesheet"s href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"/>
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- Start Of Navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+
+                <!-- Brand -->
+                <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ournav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand hvr-grow-rotate" href="#">Shenko <span class="main-color">Inc.</span></a>
+                </div>
+
+                <!-- Collect the nav links -->
+                <div class="collapse navbar-collapse" id="ournav">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-scrl="carousel" class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li data-scrl="about"><a href="#">About</a></li>
+                        <li data-scrl="testimonials"><a href="#">Testimonials</a></li>
+                        <li data-scrl="" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li data-scrl="price-table"><a href="#">Our Prices</a></li>
+                                <li data-scrl="out-team"><a href="#">Our Team</a></li>
+                                <li data-scrl="subscribe"><a href="#">Subscribe</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li data-scrl="skills"><a href="#">Our Skills</a></li>
+                            </ul>
+                        </li>
+                        <li data-scrl="contact-us"><a href="#">Contact Us</a></li>
+                        <li data-scrl="footer"><a href="#">Map</a></li>
+                    </ul>
+                </div>
+
+            </div><!-- End Of Container -->
+        </nav>
+        <!-- End Of Navbar -->
+        
+        <!-- Start Of Loading Overlay Section -->
+        <section class="loading">
+            <h2 class="h1 text-center"><b>Wait The Page Is loading</b></h2>
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+            </div>
+        </section>
+        <!-- End Of Loading Overlay Section -->
+        
+        <!-- Start Of Option Box Section -->
+        <section class="option-box">
+            <div class="color-option">
+                <h4>Change Theme Color</h4>
+                <ul class="list-unstyled">
+                    <li data-value="css/site-themes/default-theme.css"></li>
+                    <li data-value="css/site-themes/darkblue-theme.css"></li>
+                    <li data-value="css/site-themes/lightblue-theme.css"></li>
+                    <li data-value="css/site-themes/purple-theme.css"></li>
+                    <li data-value="css/site-themes/green-theme.css"></li>
+                </ul>
+            </div>
+            <i class="fas fa-cog fa-2x main-color option-icon"></i>
+        </section>
+        <!-- End Of Option Box Section -->
+
+        <!-- Start Of Carousel -->
+        <div id="myslide" class="carousel slide hidden-xs" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myslide" data-slide-to="0" class="active"></li>
+                <li data-target="#myslide" data-slide-to="1"></li>
+                <li data-target="#myslide" data-slide-to="2"></li>
+                <li data-target="#myslide" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="images/slider/1.jpg" alt="Slider picture">
+                    <div class="carousel-caption hidden-xs hvr-wobble-bottom">
+                        <h2 class="h1">Web Design</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <div class="btn btn-primary">Read More</div>
+                        <div class="btn btn-danger">Buy Now</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/2.jpg" alt="Slider picture">
+                    <div class="carousel-caption hidden-xs hvr-wobble-bottom">
+                        <h2 class="h1">Programming</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <div class="btn btn-primary">Read More</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/3.jpg" alt="Slider picture">
+                    <div class="carousel-caption hidden-xs hvr-wobble-bottom">
+                        <h2 class="h1">Desktop</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <div class="btn btn-primary">Read More</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/slider/4.jpg" alt="Slider picture">
+                    <div class="carousel-caption hidden-xs hvr-wobble-bottom">
+                        <h2 class="h1">Web Hosting</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. 
+                        </p>
+                        <div class="btn btn-primary">Read More</div>
+                        <div class="btn btn-danger">Buy Now</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#myslide" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myslide" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- End Of Carousel -->
+
+        <!-- Start Of About Section -->
+        <section class="about text-center wow bounceIn" data-wow-duration="1s" data-wow-offset="250">
+            <div class="container">
+                <h1>Welcome to <span class="main-color hvr-rotate">Shenko Inc.</span></h1>
+                <p class="lead">
+                    Welcome to my web site, This site designed with <strong>Bootstrap</strong>
+                    Version 3.2.0, And i hope you enjoy exploring it, Thank you
+                </p>
+            </div>
+        </section>
+        <!-- End Of About Section -->
+
+        <!-- Start Of Our Features Section -->
+        <section class="features text-center">
+            <div class="container">
+                <h2 class="h1 hvr-shadow-radial wow slideInDown" data-wow-duration=".5s" data-wow-offset="225"><span class="main-color">Our</span> Features</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="feat hvr-float-shadow wow bounceInLeft" data-wow-duration="2s" data-wow-offset="180">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                            <h3>100% Responsive</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="feat hvr-float-shadow wow bounceInDown" data-wow-duration="2s" data-wow-offset="180">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            <h3>Retina Ready</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="feat hvr-float-shadow wow bounceInUp" data-wow-duration="2s" data-wow-offset="180">
+                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                            <h3>Awesome Design</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="feat hvr-float-shadow wow bounceInRight" data-wow-duration="2s" data-wow-offset="180">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            <h3>Well Documented</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Our Features Section -->
+        
+        <!-- Start Of Testimonials Section -->
+        <section class="testimonials text-center wow rotateInDownLeft" data-wow-duration="1.25s" data-wow-offset="380">
+            <div class="container">
+                <h2 class="h1 hvr-shadow-radial">What <span class="main-color">Our</span> Clients Say</h2>
+                
+                <!-- Start Of Carousel -->
+                <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat,
+                                quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <span class="main-color">Mohammed</span>
+                        </div>
+                        <div class="item">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat,
+                                quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <span class="main-color">Khalid</span>
+                        </div>
+                        <div class="item">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat,
+                                quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <span class="main-color">Noha</span>
+                        </div>
+                        <div class="item">
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat,
+                                quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. 
+                            </p>
+                            <span class="main-color">Hany</span>
+                        </div>
+                    </div>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators hidden-xs">
+                        <li data-target="#testimonials-carousel" data-slide-to="0" class="active">
+                            <img class="img-responsive" src="images/tstimonials/1.PNG" alt="Client picture"/> 
+                        </li>
+                        <li data-target="#testimonials-carousel" data-slide-to="1">
+                            <img class="img-responsive" src="images/tstimonials/2.png" alt="Client picture"/> 
+                        </li>
+                        <li data-target="#testimonials-carousel" data-slide-to="2">
+                            <img class="img-responsive" src="images/tstimonials/3.jpg" alt="Client picture"/> 
+                        </li>
+                        <li data-target="#testimonials-carousel" data-slide-to="3">
+                            <img class="img-responsive" src="images/tstimonials/4.PNG" alt="Client picture"/> 
+                        </li>
+                    </ol>
+                </div>
+                <!-- End Of Carousel -->
+            </div>
+        </section>
+        <!-- End Of Testimonials Section -->
+        
+        <!-- Start Of Price Table Section -->
+        <section class="price-table text-center">
+            <div class="container">
+                <h2 class="h1 hvr-shadow-radial wow slideInDown" data-wow-duration=".65s" data-wow-offset="330"><span class="main-color">Our</span> Prices</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow bounceInRight" data-wow-delay=".5s" data-wow-duration="1s" data-wow-offset="375">
+                        <div class="price-box">
+                            <h2 class="text-primary">Hosting</h2>
+                            <p class="center-block">20$</p>
+                            <ul class="list-unstyled">
+                                <li>Space: 30 GB</li>
+                                <li>Emails: 10</li>
+                                <li>IPs: 2 ip</li>
+                                <li>Databases: 5</li>
+                                <li>Ftp Accounts:8</li>
+                            </ul>
+                            <a class="btn btn-primary">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow bounceInRight" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="375">
+                        <div class="price-box">
+                            <h2 class="text-info">Vps</h2>
+                            <p class="center-block">30$</p>
+                            <ul class="list-unstyled">
+                                <li>Space: 40 GB</li>
+                                <li>Emails: 15</li>
+                                <li>IPs: 4 ip</li>
+                                <li>Databases: 8</li>
+                                <li>Ftp Accounts: 10</li>
+                            </ul>
+                            <a class="btn btn-info">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow bounceInRight" data-wow-delay="1.5s" data-wow-duration="1s" data-wow-offset="375">
+                        <div class="price-box">
+                            <h2 class="text-success">Dedicated</h2>
+                            <p class="center-block">40$</p>
+                            <ul class="list-unstyled">
+                                <li>Space: 60 GB</li>
+                                <li>Emails: 20</li>
+                                <li>IPs: 6 ip</li>
+                                <li>Databases: 12</li>
+                                <li>Ftp Accounts: 12</li>
+                            </ul>
+                            <a class="btn btn-success">Order Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 wow bounceInRight" data-wow-delay="2s" data-wow-duration="1s" data-wow-offset="375">
+                        <div class="price-box">
+                            <h2 class="text-danger">Cloud</h2>
+                            <p class="center-block">50$</p>
+                            <ul class="list-unstyled">
+                                <li>Space: 80 GB</li>
+                                <li>Emails: 20</li>
+                                <li>IPs: 10 ip</li>
+                                <li>Databases: 15</li>
+                                <li>Ftp Accounts: 15</li>
+                            </ul>
+                            <a class="btn btn-danger">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Price Section -->
+        
+        <!-- Start Of Our Team Section -->
+        <section class="out-team text-center">
+            <div class="overlay">
+                <div class="container">
+                    <h2 class="h1 hvr-wobble-skew wow slideInDown" data-wow-duration="1s" data-wow-offset="400">Meet <span class="main-color">Our</span> Team</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 hvr-wobble-vertical">
+                            <div class="member wow fadeInDown" data-wow-delay="2s" data-wow-duration="1s" data-wow-offset="400">
+                                <img class="img-circle hvr-float" src="images/our-team/4.jpg" alt="Team Member Picture"/>
+                                <h3>Song</h3>
+                                <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore. 
+                                </p>
+                                <i class="fab fa-google-plus fa-lg"></i>
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <i class="fab fa-twitter fa-lg"></i>
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 hvr-wobble-vertical">
+                            <div class="member wow fadeInDown" data-wow-delay="1.5s" data-wow-duration="1s" data-wow-offset="400">
+                                <img class="img-circle hvr-float" src="images/our-team/2.jpg" alt="Team Member Picture"/>
+                                <h3>Martial</h3>
+                                <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore.
+                                </p>
+                                <i class="fab fa-google-plus fa-lg"></i>
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <i class="fab fa-twitter fa-lg"></i>
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 hvr-wobble-vertical">
+                            <div class="member wow fadeInDown" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="400">
+                                <img class="img-circle hvr-float" src="images/our-team/3.jpg" alt="Team Member Picture"/>
+                                <h3>Anna</h3>
+                                <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore. 
+                                </p>
+                                <i class="fab fa-google-plus fa-lg"></i>
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <i class="fab fa-twitter fa-lg"></i>
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12 hvr-wobble-vertical">
+                            <div class="member wow fadeInDown" data-wow-delay=".5s" data-wow-duration="1s" data-wow-offset="400">
+                                <img class="img-circle hvr-float" src="images/our-team/1.jpg" alt="Team Member Picture"/>
+                                <h3>Defoe</h3>
+                                <p>
+                                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore.
+                                </p>
+                                <i class="fab fa-google-plus fa-lg"></i>
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <i class="fab fa-twitter fa-lg"></i>
+                                <i class="fab fa-youtube fa-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Our Team Section -->
+        
+        <!-- Start Of Subscribe Section -->
+        <section class="subscribe text-center">
+            <div class="container wow bounceInDown" data-wow-duration="1.25s" data-wow-offset="250">
+                <h2 class="h1 hvr-shadow-radial">Keep <span class="main-color">In</span> Touch</h2>
+                <p class="lead">Subscribe Now To Get Last Newsletter Of Our Business</p>
+                <form class="form-inline">
+                    <input class="form-control input-lg" type="email" placeholder="Write Your Email Here"/>
+                    <button class="btn btn-danger btn-lg"><i class="fas fa-bell fa-lg"></i>&numsp;Subscribe</button>
+                </form>
+            </div>
+        </section>
+        <!-- End Of Subscribe Section -->
+        
+        <!-- Start Of Statistics Section -->
+        <section class="statistics text-center">
+            <div class="overlay">
+                <div class="container wow lightSpeedIn" data-wow-duration="1.25s" data-wow-offset="310">
+                    <h2 class="h1 hvr-wobble-skew"><span class="main-color">Our</span> Statistics</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="stats">
+                                <i class="fas fa-users fa-5x"></i>
+                                <p class="lead">23,569</p>
+                                <span>Users Statistic</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="stats">
+                                <i class="fas fa-comments fa-5x"></i>
+                                <p class="lead">44,157</p>
+                                <span>Posted Comments</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="stats">
+                                <i class="fas fa-briefcase fa-5x"></i>
+                                <p class="lead">1,511</p>
+                                <span>Projects Done</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="stats">
+                                <i class="fas fa-ticket-alt fa-5x"></i>
+                                <p class="lead">11,602</p>
+                                <span>Archived Tickets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Statistics Section -->
+        
+        <!-- Start Of Skills Section -->
+        <section class="skills">
+            <div class="container">
+                <h2 class="h1 hvr-shadow-radial wow slideInDown" data-wow-duration=".65s" data-wow-offset="250"><span class="main-color">Our</span> Skills</h2>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="skill-bars">
+                            <div class="progress hvr-forward wow bounceInDown" data-wow-delay="2s" data-wow-duration="1s" data-wow-offset="210">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                    Html/Css
+                                </div>
+                            </div>
+                            <div class="progress hvr-forward wow bounceInDown" data-wow-delay="1.5s" data-wow-duration="1s" data-wow-offset="160">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                                    Javascript/JQuery
+                                </div>
+                            </div>
+                            <div class="progress hvr-forward wow bounceInDown" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="110">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                                    PHP/MySQL
+                                </div>
+                            </div>
+                            <div class="progress hvr-forward wow bounceInDown" data-wow-delay=".5s" data-wow-duration="1s" data-wow-offset="50">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                                    Wordpress
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 hvr-wobble-skew">
+                        <div class="skill-info wow flipInX" data-wow-delay="2.5s" data-wow-duration="2s" data-wow-offset="245">
+                            <h2>About Team</h2>
+                            <p class="lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam.
+                            </p>
+                            <button type="button" class="btn btn-primary">Talk With A Professional</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Skills Section -->
+        
+        <!-- Start Of Contact Us Section -->
+        <section class="contact-us text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="wow slideInDown" data-wow-duration="1.25s" data-wow-offset="350">
+                        <i class="fas fa-headphones-alt fa-4x hvr-wobble-horizontal"></i>
+                        <h2 class="h1 hvr-wobble-skew">Contact <span class="main-color">Us</span></h2>
+                        <p class="lead">We Are Ready To Answer All Your Question, Just Ask <i class="fas fa-smile-wink fa-lg"></i></p>
+                    </div>
+                    <div class="row">
+                        <form role="form">
+                            <div class="col-md-6 wow bounceInLeft" data-wow-duration="1.25s" data-wow-offset="210">
+                                <div class="form-group">
+                                    <input class="form-control input-lg" type="text" placeholder="Write Your Name" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control input-lg" type="email" placeholder="Write Your Email" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control input-lg" type="text" placeholder="Write Your Phone Number" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow bounceInRight" data-wow-duration="1.25s" data-wow-offset="210">
+                                <div class="form-group">
+                                    <textarea class="form-control input-lg" placeholder="Write Your Message"></textarea>
+                                </div>
+                                <button class="btn btn-danger input-lg btn-block" type="button">Contact Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Contact Us Section -->
+        
+        <!-- Start Of Our Clients Section -->
+        <section class="our-clients text-center">
+            <div class="container">
+                <h2 class="h1 hvr-shadow-radial wow slideInDown" data-wow-duration="1s" data-wow-offset="210">Our <span class="main-color">Big</span> Clients</h2>
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block  hvr-bounce-in" src="images/our-clients/mercedes.jpg" alt="Our Clients Picture"/>
+                        </li>
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-delay=".5s" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block  hvr-bounce-in" src="images/our-clients/bmw.png" alt="Our Clients Picture"/>
+                        </li>
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-delay="1s" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block hvr-bounce-in" src="images/our-clients/lancer.jpg" alt="Our Clients Picture"/>
+                        </li>
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-delay="1.5s" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block hvr-bounce-in" src="images/our-clients/chevrolet.jpg" alt="Our Clients Picture"/>
+                        </li>
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-delay="2s" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block hvr-bounce-in" src="images/our-clients/nissan.jpg" alt="Our Clients Picture"/>
+                        </li>
+                        <li class="col-md-2 col-xs-4 wow fadeInRightBig" data-wow-delay="2.5s" data-wow-duration="1s" data-wow-offset="200">
+                            <img class="img-responsive center-block hvr-bounce-in" src="images/our-clients/hyundai.jpeg" alt="Our Clients Picture"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Of Our Clients Section -->
+        
+        <!-- Start Of Footer Section -->
+        <section class="footer">
+            <div class="container wow lightSpeedIn" data-wow-duration="1.5s" data-wow-offset="315">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <h3 class="main-color">Sitemap</h3>
+                        <ul class="list-unstyled elements">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Company</li>
+                            <li>Code</li>
+                            <li>Design</li>
+                            <li>Host</li>
+                            <li>Solutions</li>
+                            <li>Sitemap</li>
+                            <li>Contact</li>
+                        </ul>
+                        <ul class="list-unstyled social">
+                            <li><i class="fab fa-google-plus fa-2x"></i></li>
+                            <li><i class="fab fa-facebook fa-2x"></i></li>
+                            <li><i class="fab fa-twitter fa-2x"></i></li>
+                            <li><i class="fab fa-youtube fa-2x"></i></li>
+                            <li><i class="fab fa-linkedin fa-2x"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h3 class="main-color">Latest Articles</h3>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/footer/1.png" alt="Article Picture">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Web Design</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/footer/2.png" alt="Article Picture">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Coding</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                        </div>
+                        <div class="media">
+                            <a class="pull-left" href="#">
+                                <img class="media-object" src="images/footer/3.png" alt="Article Picture">
+                            </a>
+                            <div class="media-body">
+                                <h4 class="media-heading">Programming</h4>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h3 class="main-color">Our Work</h3>
+                        <img class="img-thumbnail" src="images/footer/our work/1.jpg" alt="Project Picture" />
+                        <img class="img-thumbnail" src="images/footer/our work/2.jpg" alt="Project Picture" />
+                        <img class="img-thumbnail" src="images/footer/our work/3.jpg" alt="Project Picture" />
+                        <img class="img-thumbnail" src="images/footer/our work/4.jpg" alt="Project Picture" />
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                Copyright &COPY; 2020 <span class="main-color">Shenko Inc.</span>, Designed By Mohammed Hamada El-Shennawey
+            </div>
+        </section>
+        <!-- End Of Footer Section -->
+        
+        <!-- UP Button -->
+        <i class="fas fa-chevron-circle-up fa-2x up-button main-color"></i>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script> new WOW().init(); </script>
+    </body>
+</html>

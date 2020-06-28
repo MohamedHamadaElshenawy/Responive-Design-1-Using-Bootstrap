@@ -1,0 +1,28 @@
+/************** Start Light Blue Theme **************/
+
+/* Coloring Class Given To Many Elements */
+.main-color{
+    color: #4dcdde;
+}
+
+/* Nav Bar And Carousel*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-menu .divider,
+.carousel-indicators .active {
+    background-color: #4dcdde;
+}
+
+/* Brand Dropdown Menu */
+.dropdown-menu{
+    border-top: 3px solid #4dcdde;
+}
+
+/* Carousel Indicators And Testimonial Section */
+.carousel-indicators .active,
+.testimonials .carousel-indicators li.active{
+    border-color: #4dcdde;
+}
