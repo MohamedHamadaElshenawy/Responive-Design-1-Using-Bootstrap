@@ -1,6 +1,5 @@
 //loading design while page is loading
 $(window).on('load', function(){
-    $("body").css("overflow","hidden");
     $(".loading .h1").fadeOut(2500,function(){
         $(this).parent().fadeOut(1500,function(){
             $(this).remove();
