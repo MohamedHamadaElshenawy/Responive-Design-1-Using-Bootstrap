@@ -2,11 +2,8 @@
 
 /* media of custom Mobiles */
 @media (max-width: 360px){
-    .navbar.navbar-inverse{
-        width: 360px;
-    }
-    .up-button{
-        right: 130px;
+    html{
+        overflow: hidden;
     }
 }
 
