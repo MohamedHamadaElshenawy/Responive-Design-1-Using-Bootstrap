@@ -4,12 +4,6 @@ $(window).on('load', function(){
         $(this).parent().fadeOut(1500,function(){
             $(this).remove();
             $("body").css("overflow","auto");
-            //Nice Scroll Plugin
-            $("html").niceScroll({
-                cursorcolor:"#666",
-                cursorwidth:"10px",
-                cursorborder:"1px solid #666"
-            });
         });
     });
 });
@@ -67,6 +61,14 @@ $(function(){
         $("html, body").animate({
             scrollTop: 0
         },1500);
+    });
+    
+    
+    //Nice Scroll Plugin
+    $("html").niceScroll({
+        cursorcolor:"#666",
+        cursorwidth:"10px",
+        cursorborder:"1px solid #666"
     });
     
 });
