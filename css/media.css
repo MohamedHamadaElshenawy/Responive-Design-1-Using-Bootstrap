@@ -1,5 +1,12 @@
 /******************* Media Query *******************/
 
+/* media of custom Mobiles */
+@media (max-width: 360px){
+    html{
+        margin-right: -105px;
+    }
+}
+
 /* media of Mobiles and Tablets */
 @media (max-width: 767px){
     .navbar-inverse .navbar-nav > li > a {
