@@ -65,7 +65,7 @@ $(function(){
     
     
     //Nice Scroll Plugin
-    $("html").niceScroll({
+    $("html, body").niceScroll({
         cursorcolor:"#666",
         cursorwidth:"10px",
         cursorborder:"1px solid #666"
