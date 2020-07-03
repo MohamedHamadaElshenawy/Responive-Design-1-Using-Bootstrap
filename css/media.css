@@ -1,9 +1,9 @@
 /******************* Media Query *******************/
 
 /* media of custom Mobiles */
-@media (max-width: 360px){
+@media (max-width: 350px){
     html{
-        margin-right: -90px;
+        margin-right: -95px;
     }
 }
 
