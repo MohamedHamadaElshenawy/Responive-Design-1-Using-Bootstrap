@@ -56,7 +56,7 @@ $(function(){
     });
     
     //Scroll To The Section Position When Clicked Its link
-    $("#ournav li").click(function(){
+    $("#ournav li:not(:nth-of-type(4))").click(function(){
         $(".navbar-header button").addClass("collapsed");
         $(".navbar-collapse").removeClass("in");
         $("html, body").animate({
