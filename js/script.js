@@ -57,6 +57,8 @@ $(function(){
     
     //Scroll To The Section Position When Clicked Its link
     $("#ournav li").click(function(){
+        $(".navbar-header button").addClass("collapsed");
+        $(".navbar-collapse").removeClass("in");
         $("html, body").animate({
             scrollTop: $("." + $(this).data("scrl")).offset().top - 30
         },1500);
